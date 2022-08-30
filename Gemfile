@@ -18,7 +18,7 @@ gem "rake"
 
 # Provides functionality to interact with a SQLite3 database
 # https://github.com/sparklemotion/sqlite3-ruby
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.5.0.rc1"
 
 # Require all files in a folder
 # https://github.com/jarmo/require_all
@@ -28,13 +28,15 @@ gem "require_all"
 group :development do
   # Used to generate seed data
   # https://github.com/faker-ruby/faker
-  gem "faker", "~> 2.18"
+  gem "faker", "~> 2.22.0"
 
   # Auto-reload the server when files are changed
   # https://github.com/alexch/rerun
-  gem "rerun"
+  # gem 'ffi', '~> 1.15', '>= 1.15.5'
+  
+  # gem "rerun", "~>0.13.1"
 
-  gem "pry"
+  gem "pry", "~> 0.14.1"
 end
 
 # These gems will only be used when we are running tests
